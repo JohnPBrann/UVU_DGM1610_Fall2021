@@ -1,0 +1,485 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.14f1 (d0d1bb862f9d) revision 13685179'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19043.1165; Version 2009; 64bit' Language: 'en' Physical Memory: 16172 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.14f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Jack School/Documents/git/UVU_DGM1610_Fall2021/prototype 1 - tank game
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+53410
+Successfully changed project path to: C:/Users/Jack School/Documents/git/UVU_DGM1610_Fall2021/prototype 1 - tank game
+C:/Users/Jack School/Documents/git/UVU_DGM1610_Fall2021/prototype 1 - tank game
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 22.18 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.14f1 (d0d1bb862f9d)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.14f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Jack School/Documents/git/UVU_DGM1610_Fall2021/prototype 1 - tank game/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 (ID=0x2503)
+    Vendor:   
+    VRAM:     12143 MB
+    Driver:   27.21.14.6172
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.14f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.14f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.14f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56720
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.14f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.14f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001476 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 25.08 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.853 seconds
+Domain Reload Profiling:
+	ReloadAssembly (853ms)
+		BeginReloadAssembly (39ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (347ms)
+			LoadAssemblies (38ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (134ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (24ms)
+			SetupLoadedEditorAssemblies (126ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (25ms)
+				BeforeProcessingInitializeOnLoad (7ms)
+				ProcessInitializeOnLoadAttributes (67ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002333 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.23 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.788 seconds
+Domain Reload Profiling:
+	ReloadAssembly (789ms)
+		BeginReloadAssembly (107ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (14ms)
+		EndReloadAssembly (632ms)
+			LoadAssemblies (65ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (222ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (239ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (42ms)
+				ProcessInitializeOnLoadAttributes (184ms)
+				ProcessInitializeOnLoadMethodAttributes (3ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.23 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1390 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 65.2 MB.
+System memory in use after: 65.2 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1823.
+Total: 1.482400 ms (FindLiveObjects: 0.104000 ms CreateObjectMapping: 0.034200 ms MarkObjects: 1.245400 ms  DeleteObjects: 0.097600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Level 1 Game Art/Box_Crate.obj
+  artifactKey: Guid(5ccf22ec33eb8481cada055c7c544a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Game Art/Box_Crate.obj using Guid(5ccf22ec33eb8481cada055c7c544a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da44da1d7ca2b67ce1818c0e7008d209') in 0.308708 seconds 
+  Import took 0.311434 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Level 1 Game Art/Missile.fbx
+  artifactKey: Guid(5afca0c711bf5441f891bdad79951cca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Game Art/Missile.fbx using Guid(5afca0c711bf5441f891bdad79951cca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02275685c9ac47debe689a53927d425a') in 0.044477 seconds 
+  Import took 0.046477 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Level 1 Game Art/Tank.fbx
+  artifactKey: Guid(70d18a653d6194e5cb268ecad95e45ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Game Art/Tank.fbx using Guid(70d18a653d6194e5cb268ecad95e45ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cf8da05a30a2181b0b3f02187ac4ff7') in 0.076582 seconds 
+  Import took 0.078727 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Level 1 Game Art/pSphere1Mat.mat
+  artifactKey: Guid(91e600b4ccbbb4470b891ed0ec6e4c06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Game Art/pSphere1Mat.mat using Guid(91e600b4ccbbb4470b891ed0ec6e4c06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '243b4c5cd6aa6f2ea42c3717b42c0e42') in 0.074988 seconds 
+  Import took 0.076962 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/Level 1 Game Art/Ground.mat
+  artifactKey: Guid(1ba0813396043440abdae5460d38d3a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Game Art/Ground.mat using Guid(1ba0813396043440abdae5460d38d3a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '358a454b2becf0f4042910034f11c7bc') in 0.008337 seconds 
+  Import took 0.011079 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000400 seconds.
+  path: Assets/Level 1 Game Art/Oil_Barrel.obj
+  artifactKey: Guid(d9cf690c6c8344e5d8d8e4286bbd9be6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Game Art/Oil_Barrel.obj using Guid(d9cf690c6c8344e5d8d8e4286bbd9be6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8219f59c1f80ffe18409413f0134bd95') in 0.016288 seconds 
+  Import took 0.018882 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Level 1 Game Art/Prototype 1 Scene.obj
+  artifactKey: Guid(c485e95457bf04b698396422e4ce1bcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Game Art/Prototype 1 Scene.obj using Guid(c485e95457bf04b698396422e4ce1bcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a71637945b61fd403f3896840e7a185') in 0.037903 seconds 
+  Import took 0.040298 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/Level 1 Game Art/Oil_Barrel.obj
+  artifactKey: Guid(d9cf690c6c8344e5d8d8e4286bbd9be6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Game Art/Oil_Barrel.obj using Guid(d9cf690c6c8344e5d8d8e4286bbd9be6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8219f59c1f80ffe18409413f0134bd95') in 0.016502 seconds 
+  Import took 0.018839 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Level 1 Game Art/Bomb.fbx
+  artifactKey: Guid(8136bb8877b004cada40455394016e8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Game Art/Bomb.fbx using Guid(8136bb8877b004cada40455394016e8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b9257eb0bbba32efc83a349e629e2ad') in 0.024413 seconds 
+  Import took 0.027279 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 73.650827 seconds.
+  path: Assets/Level 1 Game Art/Box_Crate.obj
+  artifactKey: Guid(5ccf22ec33eb8481cada055c7c544a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Game Art/Box_Crate.obj using Guid(5ccf22ec33eb8481cada055c7c544a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '115358986b69ee36fb4af4f587f137e0') in 0.017688 seconds 
+  Import took 0.019763 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/Level 1 Game Art/Box_CrateMat.mat
+  artifactKey: Guid(c00feffade65de8479203e1f9aa13acd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Game Art/Box_CrateMat.mat using Guid(c00feffade65de8479203e1f9aa13acd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e4420fb3fc5039815532411f5607f33') in 0.010834 seconds 
+  Import took 0.013479 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Level 1 Game Art/Box_Crate.obj
+  artifactKey: Guid(5ccf22ec33eb8481cada055c7c544a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Game Art/Box_Crate.obj using Guid(5ccf22ec33eb8481cada055c7c544a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '115358986b69ee36fb4af4f587f137e0') in 0.020190 seconds 
+  Import took 0.022471 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 40.512836 seconds.
+  path: Assets/Level 1 Game Art
+  artifactKey: Guid(871c4eb6b9c1b49d9a2a33908c4868bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Game Art using Guid(871c4eb6b9c1b49d9a2a33908c4868bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a575eaf19e2b608c6291d94ed6120859') in 0.005230 seconds 
+  Import took 0.008281 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003281 seconds.
+  path: Assets/Level 1 Game Art
+  artifactKey: Guid(871c4eb6b9c1b49d9a2a33908c4868bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Game Art using Guid(871c4eb6b9c1b49d9a2a33908c4868bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a575eaf19e2b608c6291d94ed6120859') in 0.001610 seconds 
+  Import took 0.003433 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.694148 seconds.
+  path: Assets/Level 1 Game Art/Oil_Barrel.obj
+  artifactKey: Guid(d9cf690c6c8344e5d8d8e4286bbd9be6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Game Art/Oil_Barrel.obj using Guid(d9cf690c6c8344e5d8d8e4286bbd9be6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1f8679f8f1e19b0722cca5db91ace9e') in 0.019045 seconds 
+  Import took 0.021679 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/Level 1 Game Art/Oil_BarrelMat.mat
+  artifactKey: Guid(b0b3d164da003614b9615303081d8b58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Game Art/Oil_BarrelMat.mat using Guid(b0b3d164da003614b9615303081d8b58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6aa9df6207315a480c14fc0ebdd37f39') in 0.009593 seconds 
+  Import took 0.012047 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.415467 seconds.
+  path: Assets/Level 1 Game Art/Prototype 1 Scene.obj
+  artifactKey: Guid(c485e95457bf04b698396422e4ce1bcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Game Art/Prototype 1 Scene.obj using Guid(c485e95457bf04b698396422e4ce1bcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38de586c2d67e9960e4a22e01f436f8c') in 0.042364 seconds 
+  Import took 0.044955 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000317 seconds.
+  path: Assets/Level 1 Game Art/pSphere7Mat.mat
+  artifactKey: Guid(f30e3e9fcb4798d418bdaad82c3ce5a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Game Art/pSphere7Mat.mat using Guid(f30e3e9fcb4798d418bdaad82c3ce5a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a719bab46b6a7cf8bea4a97f9a36a67') in 0.008581 seconds 
+  Import took 0.010633 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Level 1 Game Art/pPlane1Mat.mat
+  artifactKey: Guid(263c4eb5a3ad9a64288781ef07e58a94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Game Art/pPlane1Mat.mat using Guid(263c4eb5a3ad9a64288781ef07e58a94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93bc1939b1b552db958e11003153f44a') in 0.010567 seconds 
+  Import took 0.012932 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/Level 1 Game Art/pSphere8Mat.mat
+  artifactKey: Guid(a92757ab1362b184fb84fdeb2fa9ef46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Game Art/pSphere8Mat.mat using Guid(a92757ab1362b184fb84fdeb2fa9ef46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24ae0bc24950823d5624a5e51419e83a') in 0.010221 seconds 
+  Import took 0.012905 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 124.885307 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(ea368ec15d06e1d449c6e3b87e348ee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(ea368ec15d06e1d449c6e3b87e348ee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3436867dad1f2fa7c5b16f827329bdd5') in 0.004385 seconds 
+  Import took 0.006767 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.849966 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 1.068936 seconds  code(4) message(Build asset version error: assets/scenes/samplescene.unity in SourceAssetDB has modification time of '2020-04-17T08:35:40Z' while content on disk has modification time of '0001-01-01T00:00:00Z' with error code 2
+Stacktrace:
+0x00007ff72157596c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff72157dd49 (Unity) StackWalker::ShowCallstack
+0x00007ff722a8525c (Unity) GetStacktrace
+0x00007ff722c67c27 (Unity) GetAssetHashAndValidate
+0x00007ff722c62df3 (Unity) AssetVersionBuilder::BuildHashOfSourceAssetArray
+0x00007ff722c60d62 (Unity) AssetVersionBuilder::BuildAssetVersion
+0x00007ff722c3b1cd (Unity) CreateAssetVersionBuilder
+0x00007ff722c41ecd (Unity) ImportToObjects
+0x00007ff722c40ce8 (Unity) ImportAsset
+0x00007ff722ba2d28 (Unity) AssetImportWorker::Import
+0x00007ff722bf69cf (Unity) <lambda_e7e5f5e49556456463706cfa5dd72d0a>::operator()
+0x00007ff722c99fb2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff722c9c110 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff722c9f89e (Unity) asio::io_service::run
+0x00007ff722c22c3b (Unity) RunAssetImportWorkerClientV2
+0x00007ff722c22c90 (Unity) RunAssetImporterV2
+0x00007ff7220fced6 (Unity) Application::InitializeProject
+0x00007ff722a927c2 (Unity) WinMain
+0x00007ff7248da396 (Unity) __scrt_common_main_seh
+0x00007fffa4d27034 (KERNEL32) BaseThreadInitThunk
+0x00007fffa68c2651 (ntdll) RtlUserThreadStart
+)
+  ERROR: Build asset version error: assets/scenes/samplescene.unity in SourceAssetDB has modification time of '2020-04-17T08:35:40Z' while content on disk has modification time of '0001-01-01T00:00:00Z' with error code 2
+Stacktrace:
+0x00007ff72157596c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff72157dd49 (Unity) StackWalker::ShowCallstack
+0x00007ff722a8525c (Unity) GetStacktrace
+0x00007ff722c67c27 (Unity) GetAssetHashAndValidate
+0x00007ff722c62df3 (Unity) AssetVersionBuilder::BuildHashOfSourceAssetArray
+0x00007ff722c60d62 (Unity) AssetVersionBuilder::BuildAssetVersion
+0x00007ff722c3b1cd (Unity) CreateAssetVersionBuilder
+0x00007ff722c41ecd (Unity) ImportToObjects
+0x00007ff722c40ce8 (Unity) ImportAsset
+0x00007ff722ba2d28 (Unity) AssetImportWorker::Import
+0x00007ff722bf69cf (Unity) <lambda_e7e5f5e49556456463706cfa5dd72d0a>::operator()
+0x00007ff722c99fb2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff722c9c110 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff722c9f89e (Unity) asio::io_service::run
+0x00007ff722c22c3b (Unity) RunAssetImportWorkerClientV2
+0x00007ff722c22c90 (Unity) RunAssetImporterV2
+0x00007ff7220fced6 (Unity) Application::InitializeProject
+0x00007ff722a927c2 (Unity) WinMain
+0x00007ff7248da396 (Unity) __scrt_common_main_seh
+0x00007fffa4d27034 (KERNEL32) BaseThreadInitThunk
+0x00007fffa68c2651 (ntdll) RtlUserThreadStart
+
+  Import took 1.070595 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.816938 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001650 seconds  code(4) message(Build asset version error: assets/scenes/samplescene.unity in SourceAssetDB has modification time of '2020-04-17T08:35:40Z' while content on disk has modification time of '0001-01-01T00:00:00Z' with error code 2
+Stacktrace:
+0x00007ff72157596c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff72157dd49 (Unity) StackWalker::ShowCallstack
+0x00007ff722a8525c (Unity) GetStacktrace
+0x00007ff722c67c27 (Unity) GetAssetHashAndValidate
+0x00007ff722c62df3 (Unity) AssetVersionBuilder::BuildHashOfSourceAssetArray
+0x00007ff722c60d62 (Unity) AssetVersionBuilder::BuildAssetVersion
+0x00007ff722c3b1cd (Unity) CreateAssetVersionBuilder
+0x00007ff722c41ecd (Unity) ImportToObjects
+0x00007ff722c40ce8 (Unity) ImportAsset
+0x00007ff722ba2d28 (Unity) AssetImportWorker::Import
+0x00007ff722bf69cf (Unity) <lambda_e7e5f5e49556456463706cfa5dd72d0a>::operator()
+0x00007ff722c99fb2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff722c9c110 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff722c9f89e (Unity) asio::io_service::run
+0x00007ff722c22c3b (Unity) RunAssetImportWorkerClientV2
+0x00007ff722c22c90 (Unity) RunAssetImporterV2
+0x00007ff7220fced6 (Unity) Application::InitializeProject
+0x00007ff722a927c2 (Unity) WinMain
+0x00007ff7248da396 (Unity) __scrt_common_main_seh
+0x00007fffa4d27034 (KERNEL32) BaseThreadInitThunk
+0x00007fffa68c2651 (ntdll) RtlUserThreadStart
+)
+  ERROR: Build asset version error: assets/scenes/samplescene.unity in SourceAssetDB has modification time of '2020-04-17T08:35:40Z' while content on disk has modification time of '0001-01-01T00:00:00Z' with error code 2
+Stacktrace:
+0x00007ff72157596c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff72157dd49 (Unity) StackWalker::ShowCallstack
+0x00007ff722a8525c (Unity) GetStacktrace
+0x00007ff722c67c27 (Unity) GetAssetHashAndValidate
+0x00007ff722c62df3 (Unity) AssetVersionBuilder::BuildHashOfSourceAssetArray
+0x00007ff722c60d62 (Unity) AssetVersionBuilder::BuildAssetVersion
+0x00007ff722c3b1cd (Unity) CreateAssetVersionBuilder
+0x00007ff722c41ecd (Unity) ImportToObjects
+0x00007ff722c40ce8 (Unity) ImportAsset
+0x00007ff722ba2d28 (Unity) AssetImportWorker::Import
+0x00007ff722bf69cf (Unity) <lambda_e7e5f5e49556456463706cfa5dd72d0a>::operator()
+0x00007ff722c99fb2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff722c9c110 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff722c9f89e (Unity) asio::io_service::run
+0x00007ff722c22c3b (Unity) RunAssetImportWorkerClientV2
+0x00007ff722c22c90 (Unity) RunAssetImporterV2
+0x00007ff7220fced6 (Unity) Application::InitializeProject
+0x00007ff722a927c2 (Unity) WinMain
+0x00007ff7248da396 (Unity) __scrt_common_main_seh
+0x00007fffa4d27034 (KERNEL32) BaseThreadInitThunk
+0x00007fffa68c2651 (ntdll) RtlUserThreadStart
+
+  Import took 0.003653 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004229 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.23 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.733 seconds
+Domain Reload Profiling:
+	ReloadAssembly (735ms)
+		BeginReloadAssembly (139ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (55ms)
+		EndReloadAssembly (550ms)
+			LoadAssemblies (68ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (194ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (198ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (35ms)
+				ProcessInitializeOnLoadAttributes (151ms)
+				ProcessInitializeOnLoadMethodAttributes (2ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.23 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1385 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.7 MB.
+System memory in use after: 68.7 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1869.
+Total: 1.463900 ms (FindLiveObjects: 0.098500 ms CreateObjectMapping: 0.029500 ms MarkObjects: 1.278800 ms  DeleteObjects: 0.056300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2824.784397 seconds.
+  path: Assets/Level 1 Game Art/Oil_BarrelMat.mat
+  artifactKey: Guid(b0b3d164da003614b9615303081d8b58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Game Art/Oil_BarrelMat.mat using Guid(b0b3d164da003614b9615303081d8b58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfe07f6ba93cf08fd96ee0cbb3f769c3') in 0.049703 seconds 
+  Import took 0.051715 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Level 1 Game Art/Box_CrateMat.mat
+  artifactKey: Guid(c00feffade65de8479203e1f9aa13acd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Level 1 Game Art/Box_CrateMat.mat using Guid(c00feffade65de8479203e1f9aa13acd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f3af2c2f6673c2da18e8e14d7b88e10') in 0.010129 seconds 
+  Import took 0.012298 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
