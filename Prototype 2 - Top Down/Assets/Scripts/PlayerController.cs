@@ -6,12 +6,15 @@ public class PlayerController : MonoBehaviour
 {
 
     public float speed = 20.0f;
+     public float turnSpeed = 50.0f;
     public float hInput;
     public float vInput;
-
+    public Transform launcher;
     public float xRange = 8.72f;
 
     public float yRange = 4.95f;
+
+    public GameObject projectile;
 
     //public float health;
     // Start is called before the first frame update
@@ -23,10 +26,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        hInput = Input.GetAxis("Horizontal");
+        hInput = Input.GetAxis("Horizontal"); 
         vInput = Input.GetAxis("Vertical");
 
-        transform.Translate(Vector3.right * speed * hInput * Time.deltaTime);
+        transform.Rotate(Vector3.forward * turnSpeed * hInput * Time.deltaTime);
           transform.Translate(Vector3.up * speed * vInput * Time.deltaTime);
 //Create a wall on the -x side
         if(transform.position.x < -xRange)
@@ -38,15 +41,24 @@ transform.position = new Vector3(-xRange, transform.position.y, transform.positi
         {
 transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
         }
+
         //Create a wall on the -y side
         if(transform.position.y < -yRange)
         {
-transform.position = new Vector3(-yRange, transform.position.x, transform.position.z);
+transform.position = new Vector3(transform.position.x, -yRange, transform.position.z);
         }
   //Create a wall on the y side
           if(transform.position.y > yRange)
         {
-transform.position = new Vector3(yRange, transform.position.x, transform.position.z);
+transform.position = new Vector3(transform.position.x, yRange, transform.position.z);
         }
+{
+        if(Input.GetKeyDown(KeyCode.Space))
+
+{
+Instantiate(projectile, launcher.transform.position, projectile.transform.rotation);        
+}
+}
+
     }
 }
