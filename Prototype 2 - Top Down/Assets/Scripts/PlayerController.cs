@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
 
     public float speed = 20.0f;
-     public float turnSpeed = 50.0f;
+     public float turnSpeed = 60.0f;
     public float hInput;
     public float vInput;
     public Transform launcher;
@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
         hInput = Input.GetAxis("Horizontal"); 
         vInput = Input.GetAxis("Vertical");
 
-        transform.Rotate(Vector3.forward * turnSpeed * hInput * Time.deltaTime);
+        transform.Rotate(Vector3.forward * -turnSpeed * hInput * Time.deltaTime);
           transform.Translate(Vector3.up * speed * vInput * Time.deltaTime);
 //Create a wall on the -x side
         if(transform.position.x < -xRange)
@@ -53,10 +53,10 @@ transform.position = new Vector3(transform.position.x, -yRange, transform.positi
 transform.position = new Vector3(transform.position.x, yRange, transform.position.z);
         }
 {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetButtonDown("Fire1"))
 
 {
-Instantiate(projectile, launcher.transform.position, projectile.transform.rotation);        
+Instantiate(projectile, launcher.transform.position, launcher.transform.rotation);        
 }
 }
 
