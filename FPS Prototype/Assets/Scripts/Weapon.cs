@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-
-    public GameObject bulletPrefab;
-
+   // public GameObject bulletPrefab; (old code)
+   public ObjectPool bulletPool;  // <--- (new code)
     public Transform muzzle;
 
     public int curAmmo;
-
     public int maxAmmo;
-
     public bool infiniteAmmo;
 
     public float bulletSpeed;
@@ -20,7 +17,6 @@ public class Weapon : MonoBehaviour
     public float shootRate;
 
     private float lastShootTime;
-
     private bool isPlayer;
 
 
@@ -28,6 +24,7 @@ public class Weapon : MonoBehaviour
      {
          //Disable Cursor
          Cursor.lockState = CursorLockMode.Locked;
+
          if(GetComponent<PlayerController>())
             isPlayer = true;
     }
@@ -41,14 +38,21 @@ public class Weapon : MonoBehaviour
         }
 
         return false;
+    
     }
 
     public void Shoot()
     {
+        // Cooldown
         lastShootTime = Time.time;
         curAmmo --;
 
-        GameObject  bullet = Instantiate(bulletPrefab, muzzle.position, muzzle.rotation);
+      //  Creating an instance of the bullet prefab at muzzles position and rotation
+      //  GameObject  bullet = Instantiate(bulletPrefab, muzzle.position, muzzle.rotation);
+        GameObject bullet = bulletPool.GetObject();
+
+        bullet.transform.position = muzzle.position;
+        bullet.transform.rotation = muzzle.rotation;
 
         bullet.GetComponent<Rigidbody>().velocity = muzzle.forward * bulletSpeed;
     }
