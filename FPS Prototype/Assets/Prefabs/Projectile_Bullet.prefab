@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3608946167587954657}
   - component: {fileID: 1742208282784180185}
   - component: {fileID: 4825774010199417101}
+  - component: {fileID: 4780930907372375112}
   m_Layer: 0
   m_Name: Projectile_Bullet
   m_TagString: Untagged
@@ -92,7 +93,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4583870248454111058}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
@@ -127,4 +128,18 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
+--- !u!114 &4780930907372375112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4583870248454111058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79ebb1edc0ffc6341a5127210f98f30f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  lifetime: 5
