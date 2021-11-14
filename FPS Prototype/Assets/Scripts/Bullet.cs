@@ -8,6 +8,8 @@ public class Bullet : MonoBehaviour
     public float lifetime;
     private float shootTime;
 
+    public GameObject hitParticle;
+
     void OnEnable() 
         {
             shootTime = Time.time;
@@ -25,6 +27,9 @@ public class Bullet : MonoBehaviour
                 other.GetComponent<Enemy>().TakeDamage(damage);
             //Disable Projectile for furute use
             gameObject.SetActive(false);
+            // Create the hit particle 
+            GameObject obj = Instantiate(hitParticle, transform.position, Quaternion.identity);
+            Destroy(obj, 1f);
     }
 
     //Update is called once per frame
