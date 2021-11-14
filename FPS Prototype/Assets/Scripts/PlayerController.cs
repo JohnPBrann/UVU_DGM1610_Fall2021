@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
 public int curHp;
 public int maxHp;
 
+
 [Header ("Mouse Look")]
    public float lookSensitivity; //Mouse Look sensitivity
 
@@ -53,6 +54,15 @@ public int maxHp;
         
     }    
    
+   public void GiveHealth(int amountToGive)
+   {
+        curHp = Mathf.Clamp(curHp + amountToGive, 0, maxHp);
+   }
+
+    public void GiveAmmo(int amountToGive)
+   {
+        weapon.curAmmo = Mathf.Clamp(weapon.curAmmo + amountToGive, 0, weapon.maxAmmo);
+   }
     // Update is called once per frame
     void Update()
     {
