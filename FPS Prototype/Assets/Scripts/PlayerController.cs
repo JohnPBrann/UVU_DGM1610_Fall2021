@@ -39,6 +39,10 @@ public int maxHp;
     {
         camera = Camera.main;
         rb = GetComponent<Rigidbody>();
+        // Initialize the UI
+        GameUI.instance.UpdateHealthBar(curHp, maxHp);
+        GameUI.instance.UpdateScoreText(0);
+        GameUI.instance.UpdateAmmoText(weapon.curAmmo, weapon.maxAmmo);
     }
  // Applies Damage to the Player
     public void TakeDamage(int damage)
@@ -51,17 +55,19 @@ public int maxHp;
     // If players health is reduced zero or below then run Die() 
     void Die()
     {
-        
+       GameManager.instance.LoseGame();
     }    
    
    public void GiveHealth(int amountToGive)
    {
         curHp = Mathf.Clamp(curHp + amountToGive, 0, maxHp);
+        GameUI.instance.UpdateHealthBar(curHp, maxHp);
    }
 
     public void GiveAmmo(int amountToGive)
    {
         weapon.curAmmo = Mathf.Clamp(weapon.curAmmo + amountToGive, 0, weapon.maxAmmo);
+        GameUI.instance.UpdateAmmoText(weapon.curAmmo, weapon.maxAmmo);
    }
     // Update is called once per frame
     void Update()
@@ -78,6 +84,11 @@ public int maxHp;
            if(Input.GetButtonDown("Jump"))
             Jump();
         
+        //Don't do anthing if
+        if(GameManager.instance.gamePaused == (true)) 
+        {
+            return;
+        }
     }
 
    void FixedUpdate() 
@@ -108,6 +119,7 @@ public int maxHp;
         rotX = Mathf.Clamp(rotX, minLookX, maxLookX);
         camera.transform.localRotation = Quaternion.Euler(-rotX,0,0);
         transform.eulerAngles += Vector3.up * y;
+
     }
 
 void Jump()
