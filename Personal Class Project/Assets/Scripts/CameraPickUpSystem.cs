@@ -17,6 +17,7 @@ public class CameraPickUpSystem : MonoBehaviour
     private GameObject tempObj;
     private GameObject newObj;
     private bool isGhostCreated;
+    public Transform activePlacePoint;
 
     void Start()
     {
@@ -29,6 +30,9 @@ public class CameraPickUpSystem : MonoBehaviour
     
     void Update()
     {
+        
+         if(Time.timeScale == 1)
+       {
         Ray mousePos = camera.ScreenPointToRay(Input.mousePosition);
         if(hasCamera == (false))
         {
@@ -38,6 +42,8 @@ public class CameraPickUpSystem : MonoBehaviour
         {
         PlaceCamera();
         }
+       }
+       else{}
     }
 
     void PickUpCamera()
@@ -60,10 +66,12 @@ public class CameraPickUpSystem : MonoBehaviour
               camObject.transform.localRotation = player.transform.rotation; // rotates object to face same direction as player
               //camObject.transform.position = new Vector3((player.transform.position.x + camDistanceX), (player.transform.position.y + camDistanceY), (player.transform.position.z + camDistanceZ));
                // Destroy(camObject);
-                camObject.transform.parent = player.transform; // causes object to follow hand location
+
                 camera.transform.localRotation = player.transform.rotation; // rotates object to face same direction as player
                 camera.transform.parent = player.transform; // causes object to follow hand location
                 Destroy(camObject);
+                PlacePointController();
+                canPickup=false;
             }
         }
         }
@@ -97,9 +105,9 @@ public class CameraPickUpSystem : MonoBehaviour
      camera.transform.rotation = newObj.transform.rotation;
      camera.transform.position = (new Vector3(newObj.transform.position.x, newObj.transform.position.y, newObj.transform.position.z));
      camera.transform.parent = newObj.transform;
+     newObj.transform.parent = activePlacePoint;
      hasCamera = false;
      newObj.name = ("Camera Object");
-     GameObject camObject = GameObject.Find("Camera Object");
     }
 
     void GhostCam()
@@ -108,7 +116,8 @@ public class CameraPickUpSystem : MonoBehaviour
         {   
          if(isGhostCreated == false)
              {
-              GameObject ghostCam = Instantiate(TempCam, camPlacement.position, camPlacement.rotation); 
+              GameObject ghostCam = Instantiate(TempCam, camPlacement.position, camPlacement.rotation);
+              ghostCam.transform.parent = activePlacePoint; 
               isGhostCreated = true;
              }
         }
@@ -126,7 +135,7 @@ public class CameraPickUpSystem : MonoBehaviour
         if(other.gameObject.tag == "Camera Object")
         {
             canPickup = true; //player can pick up the object
-            camObject = other.gameObject; //set the collided object to be reference
+            //camObject = other.gameObject; //set the collided object to be reference
         }
     }
     void OnTriggerExit (Collider other)
@@ -134,8 +143,23 @@ public class CameraPickUpSystem : MonoBehaviour
          if(other.gameObject.tag == "Camera Object")
         {
             canPickup = false; //player can pick up the object
-            camObject = other.gameObject; //set the collided object to be reference
+            //camObject = other.gameObject; //set the collided object to be reference
         }
+    }
+
+    void PlacePointController()
+    {
+        RaycastHit hit;
+        Ray mousePos = camera.ScreenPointToRay(Input.mousePosition);
+         if (Physics.Raycast(mousePos, out hit))
+             {
+                 if(hit.transform.tag ==("Place Point"))
+                 {
+                     hit.transform.SendMessage ("LookedAt", SendMessageOptions.RequireReceiver);
+                 }
+                
+             }
+        
     }
 
 }

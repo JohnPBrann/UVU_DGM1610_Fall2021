@@ -7,6 +7,11 @@ TagManager:
   - Camera Object
   - Place Point
   - Camera Placement
+  - Camera
+  - Gun
+  - Bottom Portal
+  - Glass
+  - Bullet
   layers:
   - Default
   - TransparentFX

@@ -10,9 +10,9 @@ public class PlayerController : MonoBehaviour
   public float verticalMove;
   public GameObject cameraPlacement;
   public CameraPickUpSystem pUO;
-  public GameObject mouseTarget;
   public bool isCrosshairVisible;
   public GameObject crosshair;
+  GameObject GameManager;
 
 
    [Header ("Mouse Look")]
@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
    public float maxLookX; //flowest down we can look
    public float minLookX; //highest we can look
    public float rotX; //Current x rotation
+   public float rotY;
    private Rigidbody rb;
    public  new Camera camera;
 
@@ -31,6 +32,10 @@ public class PlayerController : MonoBehaviour
     [Header("Stats")]
         public float moveSpeed;
 
+    void Awake()
+    {
+        GameObject GameManager = GameObject.Find("GameManager");
+    }
     void Start()
     {
         isCrosshairVisible = false;
@@ -40,6 +45,8 @@ public class PlayerController : MonoBehaviour
     
     void Update()
    { 
+       if(Time.timeScale == 1)
+       {
        CamRotation();
        Crosshair();
        if (isCrosshairVisible == true)
@@ -50,7 +57,7 @@ public class PlayerController : MonoBehaviour
        {
            crosshair.SetActive(false);
        }
-       Cursor.lockState = CursorLockMode.Locked;
+       
 
        if(pUO.hasCamera == true)
        {
@@ -63,15 +70,30 @@ public class PlayerController : MonoBehaviour
        if(isHoldingCamera == false)
        {
             TankControls();
+            CamSlightLook();
        }
        else
        {
            
             Move();
             CamLook();
-            MousePosition();
            
        }
+                RaycastHit hit;
+                Ray mousePos = camera.ScreenPointToRay(Input.mousePosition);
+         if (Physics.Raycast(mousePos, out hit))
+             {
+                 if(hit.transform.tag ==("Place Point"))
+                 {
+                     hit.transform.SendMessage ("LookedAt", SendMessageOptions.RequireReceiver);
+                 }
+                
+             }  
+       }
+       else
+       {
+           
+       }   
    }
    void TankControls()
     {
@@ -94,22 +116,27 @@ public class PlayerController : MonoBehaviour
 
  void CamLook()
     {
-        float y = Input.GetAxis("Mouse X") * lookSensitivity;
-        rotX += Input.GetAxis("Mouse Y") * lookSensitivity;
+        float y = Input.GetAxis("Mouse X") * lookSensitivity * Time.deltaTime;
+        rotX += Input.GetAxis("Mouse Y") * lookSensitivity * Time.deltaTime;
         
         rotX = Mathf.Clamp(rotX, minLookX, maxLookX);
         transform.eulerAngles += Vector3.up * y;
         camera.transform.localRotation = Quaternion.Euler(-rotX,0,0);
     }
- void MousePosition()
- {
-     Ray ray = camera.ScreenPointToRay(Input.mousePosition);
-    if (Physics.Raycast(ray, out RaycastHit raycastHit))
+    void CamSlightLook()
     {
-        mouseTarget.transform.position = raycastHit.point;
+        float slightSensitivity = 200;
+        float lookRestrictionX = 30;
+        float lookRestrictionY = 10;
+
+        rotY += Input.GetAxis("Mouse X") * slightSensitivity * Time.deltaTime;
+        rotX += Input.GetAxis("Mouse Y") * slightSensitivity * Time.deltaTime;
+        
+        rotX = Mathf.Clamp(rotX, -lookRestrictionX, lookRestrictionX);
+        rotY = Mathf.Clamp(rotY, -lookRestrictionY, lookRestrictionY);
+        camera.transform.localRotation = Quaternion.Euler(-rotX, rotY,0);
     }
 
-    }
  void Crosshair()
     { 
         if(isHoldingCamera == true)
@@ -119,9 +146,8 @@ public class PlayerController : MonoBehaviour
         else
         {
             isCrosshairVisible = false;
-        
         }
-        }
+    }
 
 
     void CamRotation()
@@ -140,18 +166,7 @@ public class PlayerController : MonoBehaviour
                 cameraPlacement.transform.Rotate(0, -15, 0 );
                 ghostCam.transform.Rotate(0, -15, 0 );
             }
-              if (Input.GetKeyDown(KeyCode.Tab))
-            {
-                GameObject ghostCam = GameObject.Find("TempCam(Clone)");
-                cameraPlacement.transform.Rotate(-15, 0, 0 );
-                ghostCam.transform.Rotate(-15, 0, 0 );
-            }
-            if (Input.GetKeyDown(KeyCode.CapsLock))
-            {
-                GameObject ghostCam = GameObject.Find("TempCam(Clone)");
-                cameraPlacement.transform.Rotate(15, 0, 0 );
-                ghostCam.transform.Rotate(15, 0, 0 );
-            }
+         
         }
         if(isHoldingCamera == false)
         {
@@ -165,20 +180,10 @@ public class PlayerController : MonoBehaviour
                  GameObject cam = GameObject.Find("Camera Object");
                  cam.transform.Rotate(0, 15, 0 );
             }
-             if (Input.GetKeyDown(KeyCode.Tab))
-            {
-                 GameObject cam = GameObject.Find("Camera Object");
-                 cam.transform.Rotate(-15, 0, 0 );
-            }
-            if (Input.GetKeyDown(KeyCode.CapsLock))
-            {
-                 GameObject cam = GameObject.Find("Camera Object");
-                 cam.transform.Rotate(15,0, 0 );
-            }
         }
          
         
-
+ 
     }
 
      
