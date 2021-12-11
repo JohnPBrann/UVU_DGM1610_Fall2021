@@ -113,8 +113,8 @@ public int maxHp;
 
     void CamLook()
     {
-        float y = Input.GetAxis("Mouse X") * lookSensitivity;
-        rotX += Input.GetAxis("Mouse Y") * lookSensitivity;
+        float y = Input.GetAxis("Mouse X") * lookSensitivity * Time.deltaTime;
+        rotX += Input.GetAxis("Mouse Y") * lookSensitivity* Time.deltaTime;
         
         rotX = Mathf.Clamp(rotX, minLookX, maxLookX);
         camera.transform.localRotation = Quaternion.Euler(-rotX,0,0);

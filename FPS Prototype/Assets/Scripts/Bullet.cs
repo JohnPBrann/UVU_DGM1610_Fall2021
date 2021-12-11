@@ -36,7 +36,7 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         if(Time.time - shootTime >= lifetime)
-            gameObject.SetActive(false);
+            Destroy(gameObject);
 
     }
 }

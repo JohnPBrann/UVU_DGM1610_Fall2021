@@ -27,7 +27,10 @@ public class GameManager : MonoBehaviour
         if(Input.GetButtonDown("Cancel"))
         {
             TogglePauseGame();
+            
+            
         }
+        GameUI.instance.UpdateHealthBar();
     }
     public void TogglePauseGame()
     {

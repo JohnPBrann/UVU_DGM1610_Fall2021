@@ -19,6 +19,9 @@ public class Weapon : MonoBehaviour
     private float lastShootTime;
     private bool isPlayer;
 
+    private AudioSource audioSource;
+    public AudioClip shootSFX;
+
 
      void Awake() 
      {
@@ -27,6 +30,8 @@ public class Weapon : MonoBehaviour
 
          if(GetComponent<PlayerController>())
             isPlayer = true;
+
+            audioSource.GetComponent<AudioSource>();
     }
 
     public bool CanShoot()
@@ -59,6 +64,7 @@ public class Weapon : MonoBehaviour
         {
             GameUI.instance.UpdateAmmoText(curAmmo, maxAmmo);
         }
+        audioSource.PlayOneShot(shootSFX);
     }
 
     // Start is called before the first frame update
